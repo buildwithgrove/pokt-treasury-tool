@@ -92,4 +92,4 @@ If you encounter issues:
 This script is available under the MIT license.
 
 ## Special Thanks
-Special thanks to @FredTeumer for making the first version of this script, which was used as inspiration for this final version.
+Special thanks to [Fred Teumer](https://github.com/fredteumer) for making the first version of this script, which was used as inspiration for this final version.
