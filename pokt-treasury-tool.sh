@@ -127,9 +127,12 @@ while read -r balance appstaked nodestaked; do
     fi
 done < "$temp_file"
 
-# Calculate and display final total on the same line
+# Get current timestamp in the format "February 24, 2025 9:48pm"
+timestamp=$(date '+%B %d, %Y at %-I:%M%p')
+
+# Calculate and display final total on the same line with timestamp
 final_total_POKT=$(echo "scale=2 ; $total_sum / $conversion" | bc)
-printf "\r${LIGHT_GREEN}[✓]${NC} Total: %'0.2f POKT\n" "$final_total_POKT"
+printf "\r${LIGHT_GREEN}[✓]${NC} Total: %'0.2f POKT (as of %s)\n" "$final_total_POKT" "$timestamp"
 
 # Cleanup temporary files
 rm "$temp_file" "$total_file" "$total_file.new" 2>/dev/null
