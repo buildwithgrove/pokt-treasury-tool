@@ -66,7 +66,7 @@ The script provides:
 
 Example output:
 ```
-[✓] Total: 5,169,682.44 POKT
+[✓] Total: 5,169,682.44 POKT (as of February 24, 2025 at 9:52PM)
 ```
 
 ## Error Handling
